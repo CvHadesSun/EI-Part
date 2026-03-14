@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hi3DGen</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+  <script type="module" src="./js/model-viewer.min.js"></script>
+
+  <link href="./css/sans.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/selection-panel.css">
+  <link rel="icon" href="./images/favicon.svg">
+
+  <script src="./js/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Hi👋3DGen: High-fidelity 3D Geometry Generation from Images via Normal Bridging</h1>
+<div class="is-size-5 publication-authors">
+  <span class="author-block"><a href="https://buaacyw.github.io/">Yiwen Chen</a><sup>1,2†</sup>,</span>
+  <span class="author-block"><a href="https://lizhihao6.github.io/">Zhihao Li</a><sup>1,2</sup>,</span>
+  <span class="author-block"><a href="https://yikaiw.github.io/">Yikai Wang</a><sup>3</sup>,</span>
+  <span class="author-block">Hu Zhang<sup>2</sup>,</span>
+  <span class="author-block">Qin Li<sup>2,4</sup>,</span>
+  <span class="author-block"><a href="https://icoz69.github.io/">Chi Zhang</a><sup>5‡</sup>,</span>
+  <span class="author-block"><a href="https://guosheng.github.io/">Guosheng Lin</a><sup>1‡</sup></span>
+</div>
+
+<div class="is-size-5 publication-authors">
+  <span class="author-block"><sup>1</sup>Nanyang Technological University,&nbsp;&nbsp;</span>
+  <span class="author-block"><sup>2</sup>Math Magic,&nbsp;&nbsp;</span>
+  <span class="author-block"><sup>3</sup>Tsinghua University,&nbsp;&nbsp;</span>
+  <span class="author-block"><sup>4</sup>School of Artificial Intelligence, Beijing Normal University,&nbsp;&nbsp;</span>
+  <span class="author-block"><sup>5</sup>Westlake University</span>
+</div>
+
+<div class="is-size-6">
+  <sup>†</sup> Work done during a research internship at Math Magic. &nbsp;&nbsp;
+  <sup>‡</sup> Corresponding Authors.
+</div>
+
+
+
+            
+
+            <!-- <div class="is-size-5 publication-authors" style="margin-top: 1em;">
+              CVPR 2025
+            </div> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+        <div style="display: flex; justify-content: center; gap: 0.75em; align-items: center; flex-wrap: wrap;">
+  <span class="link-block">
+    <a href="https://arxiv.org/pdf/" class="external-link button is-normal is-rounded is-dark" target="_blank">
+      <span class="icon">
+        <i class="fas fa-file-pdf"></i>
+      </span>
+      <span>Paper</span>
+    </a>
+  </span>
+
+  <span class="link-block">
+    <a href="https://arxiv.org/abs/" class="external-link button is-normal is-rounded is-dark" target="_blank">
+      <span class="icon">
+        <i class="ai ai-arxiv"></i>
+      </span>
+      <span>arXiv</span>
+    </a>
+  </span>
+
+<span class="link-block">
+  <a href="https://hitem3d.ai/" class="external-link button is-normal is-rounded is-dark"
+     target="_blank" style="width: 6.5em; height: 2.3em; display: flex; align-items: center; justify-content: center;">
+    <img src="images/hitem.jpg" alt="hitem3d" style="height: 1.3em; object-fit: contain;">
+  <sup>*</sup>
+  </a>
+</span>
+</div>
+<div class="is-size-6">
+  <sup>†</sup> Work done during a research internship at Math Magic.&nbsp;&nbsp;
+  <sup>‡</sup> Corresponding Authors.&nbsp;&nbsp;
+  <sup>*</sup> Try our model here.
+</div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video id="teaser" autoplay controls muted loop playsinline height="100%">
+          <source src="./images/demo.mp4" type="video/mp4">
+        </video> -->
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <img src="./images/teaser.png" alt="teaser image" style="width: 100%;">
+          </div>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Hi👋3DGen: High-fidelity 3D Geometry Generation from Images via Normal Bridging.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              With the growing demand for high-fidelity 3D models from 2D images, existing methods still face significant challenges in accurately reproducing fine-grained geometric details due to limitations in domain gaps and inherent ambiguities in RGB images. To address these issues, we propose Hi3DGen, a novel framework for generating high-fidelity 3D geometry from images via normal bridging.
+              Hi3DGen consists of three key components: (1) an image-to-normal estimator that decouples the low-high frequency image pattern with noise injection and dual-stream training to achieve generalizable, stable, and sharp estimation; (2) a normal-to-geometry learning approach that uses normal-regularized latent diffusion learning to enhance 3D geometry generation fidelity; and (3) a 3D data synthesis pipeline that constructs a high-quality dataset to support training.
+              Extensive experiments demonstrate the effectiveness and superiority of our framework in generating rich geometric details, outperforming state-of-the-art methods in terms of fidelity. Our work provides a new direction for high-fidelity 3D geometry generation from images by leveraging normal maps as an intermediate representation.
+            </p>
+            <!-- <img src="./images/method_overview_hr.png" alt="teaser image" style="width: 100%;"> -->
+          </div>
+        </div>
+      </div>
+<div class="columns is-centered">
+  <div class="column is-full has-text-centered">
+    <img src="./images/pip.png" alt="teaser image" style="width: 100%;">
+    <p class="is-size-5 has-text-weight-bold has-text-grey mt-2">
+      <strong>Overview of the Hi3DGen framework.</strong>
+    </p>
+  </div>
+</div>
+
+<div class="mb-10"></div>
+
+<div class="columns is-centered">
+  <div class="column is-full has-text-centered">
+    <img src="./images/compare.png" alt="teaser image" style="width: 100%;">
+    <p class="is-size-5 has-text-weight-bold has-text-grey mt-2">
+      <strong>Comparison With Other Methods.</strong>
+    </p>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+  <!-- Model Comparison. -->
+  <section class="hero">
+    <div class="hero-body" style="padding: 0;">
+      <div class="container is-max-desktop" id="comparison_container">
+        <h2 class="title is-3" style="margin-top: 10px; align-self: flex-start;">Comparison to Other Methods</h3>
+        <div class="content has-text-justified" style="align-self: flex-start;">
+              <p class="is-size-5 has-text-weight-bold has-text-grey mt-2">
+      <strong>Select a method from the dropdown menu to compare. Drag to rotate.</strong>
+       </p>
+          <p>
+          </p>
+        </div>
+  
+        <!-- <div id="toggleTexturedComparison" class="toggle-container">
+          <button class="toggle-button toggle-left">Geometry only</button>
+          <button class="toggle-button toggle-right active">Textured</button>
+        </div> -->
+  
+        <div class="model-container" id="model-compare-wrapper">
+          <!-- Model 1 Viewer with Label -->
+          <div class="model-wrapper-comparison">
+            <div class="model-label">Ours</div>
+            <model-viewer id="modelViewerComparison1" class="model-viewer-texture" loading="eager"
+              poster="./images/loading.gif" touch-action="pan-y" environment-image="legacy" zoom-sensitivity="0.2"
+              camera-controls disable-tap min-camera-orbit="auto auto 1m" max-camera-orbit="auto auto 10m" interaction-prompt="none"
+              shadow-intensity="1" ar style="width: 100%; height: 100%;">
+            </model-viewer>
+          </div>
+          <!-- Model 2 Viewer with Label -->
+          <div class="model-wrapper-comparison">
+            <div class="tips-wrapper">
+              <div class="tips-icon">💡Tips</div>
+              <div class="tips-text">
+                <p>● Scroll to zoom in/out</p>
+                <p>● Drag to rotate</p>
+                <p>● Press "shift" and drag to pan</p>
+                <!-- <p>● Click on the buttons at the top to switch texture color on/off</p> -->
+              </div>
+            </div>
+            <div id="comparisonFootnote">
+              *Geometry-only results.
+            </div>
+            <select id="comparisonBaselineSelection" class="dropdown model-label">
+              <option value="trellis">Trellis</option>
+              <option value="direct3d">Direct3d-S2</option>
+              <option value="comercial">Comercial Model A</option>
+              <option value="hi3dgen">Hi3DGen</option>
+            </select>
+            <model-viewer id="modelViewerComparison2" class="model-viewer-texture" loading="eager"
+              poster="./images/loading.gif" touch-action="pan-y" environment-image="legacy" zoom-sensitivity="0.2"
+              camera-controls disable-tap min-camera-orbit="auto auto 1m" max-camera-orbit="auto auto 10m" interaction-prompt="none"
+              shadow-intensity="1" ar style="width: 100%; height: 100%;">
+            </model-viewer>
+          </div>
+        </div>
+        <div class="hero-body" style="padding: 0;">
+          <div class="selection-panel" id="comparisonSelectionPanel" style="width: 100%; aspect-ratio: 3.3/1;">
+              <img class="selectable-image selected" name="rodin_images_3caff08e-86ba-4535-82b0-e4708fa9dbc0">
+
+            <img class="selectable-image selected" name="001">
+<img class="selectable-image" name="002">
+<img class="selectable-image" name="003">
+<img class="selectable-image" name="004">
+<img class="selectable-image" name="005">
+<img class="selectable-image" name="006">
+<img class="selectable-image" name="007">
+<img class="selectable-image" name="008">
+<img class="selectable-image" name="009">
+<img class="selectable-image" name="010">
+<img class="selectable-image" name="011">
+<img class="selectable-image" name="012">
+<img class="selectable-image" name="013">
+<img class="selectable-image" name="014">
+<img class="selectable-image" name="015">
+<img class="selectable-image" name="016">
+<img class="selectable-image" name="017">
+<img class="selectable-image" name="018">
+<img class="selectable-image" name="019">
+<img class="selectable-image" name="020">
+<img class="selectable-image" name="021">
+<img class="selectable-image" name="022">
+<img class="selectable-image" name="023">
+<img class="selectable-image" name="024">
+<img class="selectable-image" name="025">
+<img class="selectable-image" name="026">
+<img class="selectable-image" name="027">
+<img class="selectable-image" name="028">
+<img class="selectable-image" name="029">
+<img class="selectable-image" name="030">
+<img class="selectable-image" name="031">
+<img class="selectable-image" name="032">
+<img class="selectable-image" name="033">
+<img class="selectable-image" name="034">
+<img class="selectable-image" name="035">
+<img class="selectable-image" name="036">
+<img class="selectable-image" name="037">
+<img class="selectable-image" name="038">
+<img class="selectable-image" name="039">
+<img class="selectable-image" name="040">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+        <pre><code>
+
+
+        </code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content" style="text-align: center;">
+            <p>
+              The page template is borrowed from  <a href="https://stable-x.github.io/Hi3DGen/">Hi3DGen</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/model-viewer.js"></script>
+  <script src="./js/gallery.js"></script>
+  <script src="./js/selection-panel.js"></script>
+
+  <script src="./js/comparison.js"></script>
+
+  <script src="./js/video_gallery.js"></script>
+  <script src="./js/video_comparison.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  
+
+</body>
+
+</html>
